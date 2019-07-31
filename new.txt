@@ -27,3 +27,8 @@ public class opencatalina {
 }
 Adding the vedio call
 Adding the audio call
+
+
+Adding the Broadcast message
+Adding Groupchat
+adding privacy
