@@ -18,12 +18,17 @@ public class opencatalina {
     driver.manage().window().maximize();
     driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
     Thread.sleep(2000);
-    driver.findElement(By.id("email")).sendKeys("adminicore");
-    driver.findElement(By.id("pwd")).sendKeys("Admin@!23");
+    WebElement usernamen=driver.findElement(By.id("email"));
+    username.sendKeys("adminicore");
+    WebElement password=driver.findElement(By.id("pwd"));
+    password.sendKeys("Admin@!23");
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    driver.findElement(By.xpath("//*[text()=\"Login\"]")).click();
-    driver.quit();
+    WebElement clickbutton=driver.findElement(By.xpath("//*[text()=\"Login\"]"));
+    clickbutton.click();
+    driver.close();
+    // if its a single window we can use close() method.
 	}
 }
 Adding the vedio call
 Adding the audio call
+Changing this code to more familiar
